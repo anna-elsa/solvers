@@ -1,8 +1,10 @@
 # Solvers
 Numerical Solvers in Python
 
+
 I have attempted to make these solvers generic enough to handle any problem. If you discover an instance where these solvers do not work, then please let me know. Thanks!
 
+Still working on uploading all of my scripts.
 Topics Covered:
 * Numerical Differentiation Methods
     * Forward Difference Approximation
