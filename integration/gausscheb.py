@@ -9,12 +9,14 @@ def Gc(f, a, b, x, w, args):
     # f - the function being integrated
     # a - lower integration limit
     # b - upper integration limit
-    # x - a vector of points
-    # w - a vector of weights
+    # n - number of "bins" to integrate over
     # args - a tuple of arguments to pass to f
     # Outputs:
     # integral - the approximated value of the integral
     ###################################################
+
+    # Generate sample points and weights
+    x, w = np.polynomial.chebyshev.chebgauss(n)
 
     m = (b-a)/2
 
