@@ -1,4 +1,24 @@
-# Define a Gauss Jacobi Function
+# Program function: Solve a System of Linear Equations using Gauss-Jacobi Method
+
+################################## NOTES #################################################
+# Consider the following form of a linear system:
+#   ax + by = j
+#   cx + dy = k
+#  ... where x & y are variables, and a, b, c, d, f, and k are numbers. 
+# 
+#  The linear system can be rewritten as a product of 2 matrices: coefficients, and variables, 
+#  and set equal to the constant matrix. See below example:
+#  [ a  b ] * [ x ] = [ j ]
+#  [ c  d ]   [ y ]   [ k ]
+# 
+#  The first matrix is a (2x2) matrix containing variable coefficients. 
+#  The second matrix is a (2x1) matrix containing the variables. 
+#  Multiplied together, these matrices are set equal to a (2x1) matrix of constants. 
+#  This same form can be used in 3+ dimensions.
+#  
+#  If you have a linear systems of equations, write it in this matrix form before using ths python solver.
+##########################################################################################
+
 def gj(coef, cons, inx, maxiter, tol):
     # Arguments are:
     # coef - the coefficient matrix of the linear system.
